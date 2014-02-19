@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GKImageCropViewController.h"
 
 @protocol GKImagePickerDelegate;
 
@@ -30,7 +31,7 @@
  * @param imagePicker, the image picker instance
  * @param image, the picked and cropped image
  */
-- (void)imagePicker:(GKImagePicker *)imagePicker pickedImage:(UIImage *)image;
+- (void)imagePicker:(GKImageCropViewController *)imageCropController pickedImage:(UIImage *)image;
 
 
 /**

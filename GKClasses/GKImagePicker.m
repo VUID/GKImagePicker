@@ -88,8 +88,8 @@
 - (void)imageCropController:(GKImageCropViewController *)imageCropController didFinishWithCroppedImage:(UIImage *)croppedImage{
     
     if ([self.delegate respondsToSelector:@selector(imagePicker:pickedImage:)]) {
-        [self _hideController];
-        [self.delegate imagePicker:self pickedImage:croppedImage];
+        //[self _hideController];
+        [self.delegate imagePicker:imageCropController pickedImage:croppedImage];
     }
 }
 
