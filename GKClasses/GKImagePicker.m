@@ -176,6 +176,9 @@
         case 1:
             [self showGalleryImagePicker];
             break;
+        default:
+            [self.delegate imagePickerDidCancel:self];
+            break;
     }
 }
 
